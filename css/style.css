@@ -5,9 +5,11 @@
   --button-color: #f5f4fa;
 }
 body{
-  background-color: #fff;
+  background: #F5F5F5;
   font-family: Roboto,sans-serif;
   font-style: normal;
+  font-weight: 400;
+  
 }
 .list{
     list-style: none;
@@ -30,7 +32,7 @@ body{
 .navigation{
 
 }
-.nav,.item,.filter,.item-footer {
+.nav,.item-header,.filter,.item-footer,.address {
   text-decoration: none;
 }
 .nav.current{
@@ -41,16 +43,19 @@ body{
 
   font-weight: 500;
   font-size: 14px;
-  line-height: 1,14;
+  line-height: 1.14;
   letter-spacing: 0.02em;
 }
 .nav:hover,
-.item:hover,
+.item-header:hover,
 .item.address:hover,
-.item-footer:hover{
+.item-footer:hover
+.item-header:focus,
+.item.address:focus,
+.item-footer:focus{
   color: var(--active-color);
 }
-.item{
+.item-header{
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -175,18 +180,28 @@ body{
 /*Підвал*/
 .footer{
   background-color: #2f303a;
-  
 }
 .address{
   color: var(--button-color);
+  font-family: 'Roboto';
   font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+
+  letter-spacing: 0.03em;
 }
 .item-footer{
-  font-size: 14px;
-  line-height: 1,71;
-  letter-spacing: 0.03em;
+   color: rgba(255, 255, 255, 0.6);
+
+  font-family: 'Roboto';
   font-style: normal;
-  color: rgba(255, 255, 255, 0.6);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  
+ 
 }
 .logo-footer{
   color: #FFFFFF;
